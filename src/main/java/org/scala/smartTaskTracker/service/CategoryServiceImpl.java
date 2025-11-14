@@ -1,7 +1,6 @@
 package org.scala.smartTaskTracker.service;
 
 import org.scala.smartTaskTracker.entity.Category;
-import org.scala.smartTaskTracker.entity.Task;
 import org.scala.smartTaskTracker.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

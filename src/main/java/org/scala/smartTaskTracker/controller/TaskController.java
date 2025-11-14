@@ -16,7 +16,7 @@ public class TaskController {
     @Autowired
     TaskService taskService;
 
-    @GetMapping("/tasks")
+    @GetMapping
     public List<Task> getAllTasks() {
         return taskService.listAllTasks();
     }
@@ -31,7 +31,7 @@ public class TaskController {
         return taskService.fetchTasksByCategory(id);
     }
 
-    @PostMapping("/tasks")
+    @PostMapping()
     public void createTask(@RequestBody Task task) {
         taskService.createTask(task, task.getCategory().getId());
     }
