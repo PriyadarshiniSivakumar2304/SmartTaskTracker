@@ -1,8 +1,8 @@
 package org.scala.smartTaskTracker.controller;
 
 import org.scala.smartTaskTracker.entity.Category;
-import org.scala.smartTaskTracker.entity.Task;
 import org.scala.smartTaskTracker.service.CategoryService;
+import org.scala.smartTaskTracker.service.CategoryServiceScala;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -13,7 +13,8 @@ import java.util.List;
 public class CategoryController {
 
     @Autowired
-    CategoryService categoryService;
+//    CategoryService categoryService;
+    CategoryServiceScala categoryService;
 
     @GetMapping
     public List<Category> getAllCategories() {

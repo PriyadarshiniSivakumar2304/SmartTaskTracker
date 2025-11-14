@@ -1,7 +1,7 @@
 package org.scala.smartTaskTracker.controller;
 
-import org.scala.smartTaskTracker.repositories.TaskRepository;
 import org.scala.smartTaskTracker.service.TaskService;
+import org.scala.smartTaskTracker.service.TaskServiceScala;
 import org.scala.smartTaskTracker.entity.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,8 @@ import java.util.List;
 public class TaskController {
 
     @Autowired
-    TaskService taskService;
+//    TaskService taskService;
+    TaskServiceScala taskService;
 
     @GetMapping
     public List<Task> getAllTasks() {
